@@ -1,16 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    experimental: {
-      appDir: true,
-      serverComponentsExternalPackages: ["mongoose"],
-    },
+  experimental: {
+    missingSuspenseWithCSRBailout: false,
+  }, 
     images: {
       remotePatterns: [
         {
           protocol: 'https',
-                hostname: '*.googleusercontent.com',
-                port: '',
-                pathname: '/**',
+          hostname: '*.googleusercontent.com',
+          port: '',
+          pathname: '/**',
         },
       ],
     },
