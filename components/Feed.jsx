@@ -202,6 +202,8 @@ export async function getStaticProps() {
   return {
     props: {
       allPosts,
+      revalidateOnVercelRequest: true,
+      revalidateInterval: 1
     },
   };
 }
